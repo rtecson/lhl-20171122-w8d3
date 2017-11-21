@@ -46,11 +46,11 @@ class PhotoDetailViewController: UIViewController {
         
         // Create new image (with googly eyes) from original image
         let overlayImage = faceOverlayImageFromImage(image)
-        
+
         // Fade in the new image over the original image
         fadeInNewImage(overlayImage)
         
-//        // Send processing to userInitiated queue and return immediate
+//        // Send processing to userInitiated queue and return immediately
 //        DispatchQueue.global(qos: .userInitiated).async {
 //            // Process image while in userInitiated queue
 //            let overlayImage = self.faceOverlayImageFromImage(self.image)
